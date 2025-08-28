@@ -2,6 +2,7 @@ import './index.css';
 import React, { useState } from 'react';
 import ResourceList from './components/ResourceList.jsx';
 import ResourceDetail from './components/ResourceDetail.jsx';
+import FeedbackForm from './components/FeedbackForm.jsx';
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
       </header>
 
       <main className="container mx-auto px-6 max-w-screen-xl py-8 mt-8">
+        <FeedbackForm resourceId="res123" />
         {selectedResourceId ? (
           <ResourceDetail 
             resourceId={selectedResourceId}
