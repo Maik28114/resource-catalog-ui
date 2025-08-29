@@ -3,7 +3,6 @@ import ResourceCard from "./ResourceCard.jsx";
 import LoadingSpinner from "./LoadingSpinner.jsx";
 import ErrorMessage from "./ErrorMessage.jsx";
 
-
 const ResourceList = ({ onSelectResource }) => {
 
     const [resources, setResources] = useState([]);
