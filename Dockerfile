@@ -2,7 +2,8 @@
 FROM node:22-trixie-slim AS build_stage
 WORKDIR /app
 COPY package*.json ./
-RUN npm ci --only=production
+# npm clean install stellt sicher, dass die Versionen der Dependencies dem package-lock.json entsprechen
+RUN npm ci
 COPY . . 
 RUN npm run build
 
