@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../resource_catalog_service_example_fork"
+		},
+		{
+			"path": "../topic_skill_service_example_fork"
+		}
+	],
+	"settings": {}
+}
